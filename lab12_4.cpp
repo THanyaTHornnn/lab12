@@ -1,6 +1,10 @@
 #include<iostream>
-
+#include<string>
 using namespace std;
+template <typename T>
+
+void mySwap(T &,T &); 
+
 
 int main(){
 	int x, y;
@@ -28,5 +32,12 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+template <typename swap>
+
+void mySwap(swap &x,swap &y){
+	swap i = x;
+	x = y;
+	y = i;
 }
 
